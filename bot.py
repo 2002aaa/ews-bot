@@ -1,19 +1,35 @@
 import requests
 from datetime import datetime
 
-TOKEN = "8785731071:AAHBme8qZt5Ak4SeainvzZBNE7XYUsvzmu4"
+# 👇 ԴԱՏԱՐԿ ՄԻ ԹՈՂ — այստեղ պետք է դնես քո ՆՈՐ TOKEN-ը
+TOKEN = "8785731071:AAGBTF-jvQtaj4RzOOqPpMHV1YHnIuVnfZY"
+
+# 👇 Քո channel id (սա ճիշտ է, չփոխես)
 CHANNEL = "-1003756748417"
 
+# Ամսաթիվ
 report_date = datetime.now().strftime("%Y-%m-%d")
 
-text = f"📅 {report_date}\n🚨 GitHub bot աշխատում է"
+# Message
+text = f"""📅 Ամսաթիվ: {report_date}
 
+🚨 EWS Armenia — Daily Update
+
+✅ GitHub ավտոմատ համակարգը աշխատում է
+"""
+
+# Telegram API URL
 url = f"https://api.telegram.org/bot{TOKEN}/sendMessage"
 
-r = requests.post(url, json={
-    "chat_id": CHANNEL,
-    "text": text
-})
+# Request
+response = requests.post(
+    url,
+    json={
+        "chat_id": CHANNEL,
+        "text": text
+    }
+)
 
-print("STATUS:", r.status_code)
-print("RESPONSE:", r.text)
+# Debug output
+print("STATUS:", response.status_code)
+print("RESPONSE:", response.text)
