@@ -5,7 +5,7 @@ from datetime import datetime
 TOKEN = "8785731071:AAGBTF-jvQtaj4RzOOqPpMHV1YHnIuVnfZY"
 
 # 👇 Քո channel id (սա ճիշտ է, չփոխես)
-CHANNEL = "-1003756748417"
+CHANNEL = "@ewsarmenia"
 
 # Ամսաթիվ
 report_date = datetime.now().strftime("%Y-%m-%d")
