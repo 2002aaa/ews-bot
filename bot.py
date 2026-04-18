@@ -1,7 +1,7 @@
 import requests
 from datetime import datetime
 
-TOKEN = "ՔՈ ՆՈՐ TOKENԸ"
+TOKEN = "8785731071:AAHBme8qZt5Ak4SeainvzZBNE7XYUsvzmu4"
 CHANNEL = "-1003756748417"
 
 report_date = datetime.now().strftime("%Y-%m-%d")
