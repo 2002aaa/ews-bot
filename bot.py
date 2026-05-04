@@ -2,7 +2,7 @@ import requests
 from datetime import datetime
 
 # 👇 ԴԱՏԱՐԿ ՄԻ ԹՈՂ — այստեղ պետք է դնես քո ՆՈՐ TOKEN-ը
-TOKEN = "8785731071:AAGBTF-jvQtaj4RzOOqPpMHV1YHnIuVnfZY"
+TOKEN = "8517894443:AAHG1ZUEmB-mubI-pywiBzP7bT0vwxvVqVU"
 
 # 👇 Քո channel id (սա ճիշտ է, չփոխես)
 CHANNEL = "@ewsarmenia"
